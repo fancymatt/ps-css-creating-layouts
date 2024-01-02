@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bethany's Pie Shop</title>
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
 
-<head>
-    <title>Bethany's Pie Shop</title>
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+    <body>
 
-<body>
-    <nav>
-        <h1>Bethany's Pie Shop</h1>
-        <a href="#">
-            <img src="" alt="">
-        </a>
-        <ul>
-            <a href="pies.html">Pies</a>
-            <a href="about.html">About</a>
-            <a href="visit-us.html">Visit Us</a>
-        </ul>
-    </nav>
-    <main>
-        <div>
-            <p>Homemade flavor in the heart of Vancouver</p>
-        </div>
-        <section>
-            <h2>About Bethany's Pie Shop</h2>
-            <p>Bethany has been bringing the taste of homemade pies to customers since 2007.</p>
-            <a href="about.html">About Bethany's Pie Shop</a>
-        </section>
-        <section>
-            <h2>Pies</h2>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <header>
+            <nav class="global-nav layout border">
+                <button class="global-nav__hamburger-button">=</button>
+                <a href="#" class="global-nav__logo border">
+                    global-nav__logo
+                </a>
+                <ul class="global-nav__links border">
+                    global-nav__links
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="hero border">
+                <div class="hero__slogan-container border">
+                    <p class="hero__slogan border">hero__slogan</p>
+                </div>
             </div>
-            <p>Fresh ingredients. A loving attention to detail. And handmade crust that is just as flaky as you want it to be. Bethany's Pies need to be stated to be believed.</p>
-            <p>With over a dozen standard varietals and a rotating assortment of seasonal delights, there's always a new reason to stop in.</p>
-            <a href="">Browse Our Pies</a>
-        </section>
-        <section>
-            <h2>Visit Us</h2>
-            <img src="" alt="">
-            <section>
-                <h3>Address</h3>
-                <p>1205 5th Street</p>
-                <p>Vancouver, BC</p>
-                <p>Canada</p>
+
+            <section class="about-bethany border">
+                <div class="about-bethany__container layout border">
+                    <h2 class="about-bethany__heading border">about-bethany</h2>
+                    <div class="about-bethany__image border">about-bethany__image</div>
+                    <p class="about-bethany__paragraph border">about-bethany__paragraph</p>
+                    <button class="cta-button">cta-button</button>
+                </div>
             </section>
-            <section>
-                <h3>Hours</h3>
-                <p>Mon-Fri: 7am - 7pm</p>
-                <p>Sat: 12pm - 5pm</p>
-                <p>Closed Sundays</p>
+
+            <section class="pies border">
+                <div class="layout">
+                    <h2 class="pies__heading border">pies__heading</h2>
+                    <div class="pies__pie-images border">pies__pie-images</div>
+                    <p class="pies__paragraph-1 border">pies_paragraph-1</p>
+                    <p class="pies__paragraph-2 border">pies_paragraph-2</p>
+                    <button class="cta-button">cta-button</button>
+                </div>
             </section>
-            <a href="">Visit Us</a>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright 2024, Bethany's Pie Shop</p>
-        <ul>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="pies.html">Pies</a>
-            <a href="visit-us.html">Visit Us</a>
-        </ul>
-    </footer>
+
+            <section class="visit-us border">
+                <div class="layout">
+                    <h2 class="visit-us__heading border">visit-us__heading</h2>
+                    <div class="visit-us__image border">visit-us__image</div>
+                    <section class="address border">
+                        <h3 class="address__heading border">address__heading</h3>
+                        <p class="address__paragraph border">address__paragraph</p>
+                    </section>
+                    <section class="hours border">
+                        <h3 class="hours__heading border">hours__heading</h3>
+                        <p class="hours__paragraph border">hours__paragraph</p>
+                    </section>
+                    <button class="visit-us__cta-button cta-button">cta-button</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="global-footer border">
+            <div class="layout">
+                <div class="global-footer__copyright border">global-footer__copyright</div>
+                <ul class="global-footer__links border">
+                    global-footer__links
+                </ul>
+            </div>
+        </footer>
+
 </body>
 
 </html>

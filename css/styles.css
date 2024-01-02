@@ -1,0 +1,286 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+.border {
+    border: 1px black solid;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Layout */
+
+.layout {
+    max-width: 1080px;
+    margin: auto;
+}
+
+@media screen and (min-width: 0px) {
+
+    main {
+        margin-top: 4em;
+    }
+
+    .global-nav {
+        display: grid;
+        grid: 2em / 2em 1fr 2em;
+        gap: 0.5em;
+        grid-template-areas: "hamburger logo .";
+        padding: 0.75em 0.5em;
+    }
+
+    .global-nav__logo {
+        grid-area: logo;
+        position: relative;
+        height: 65px;
+        width: 180px;
+        justify-self: center;
+    }
+
+    .global-nav__links {
+        grid-area: links;
+        display: none;
+    }
+
+    .global-nav__hamburger-button {
+        grid-area: hamburger;
+    }
+
+    .hero {
+        height: 180px;
+    }
+
+    .hero__slogan-container {
+        height: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 0.25em;
+    }
+
+    .about-bethany {
+        padding: 1em 2em;
+    }
+
+    .about-bethany__container {
+        display: grid;
+        gap: 0.5em;
+    }
+
+    .about-bethany__image {
+        height: 200px;
+    }
+
+    .pies {
+        padding: 1em 2em;
+    }
+
+    .pies .layout {
+        display: grid;
+        gap: 0.5em;
+    }
+
+    .pies__pie-images {
+        height: 200px;
+    }
+
+    .visit-us {
+        padding: 1em 2em;
+    }
+
+    .visit-us .layout {
+        display: grid;
+        grid: auto auto auto / 1fr 1fr;
+        grid-template-areas: "heading heading"
+                             "address hours"
+                             "cta-button cta-button";
+        gap: 0.5em;
+    }
+
+    .visit-us__heading {
+        grid-area: heading;
+    }
+
+    .visit-us__image {
+        display: none;
+    }
+
+    .address {
+        grid-area: address;
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+
+    .visit-us__cta-button {
+        grid-area: cta-button;
+    }
+
+    .global-footer {
+        padding: 1em 2em;
+    }
+
+    .global-footer .layout {
+        display: grid;
+        grid: auto auto / auto;
+        gap: 0.5em;
+        grid-template-areas: "copyright"
+                             "links";
+        padding: 0.75em 0.5em;
+        justify-self: center;
+    }
+
+    .global-footer__copyright {
+        grid-area: copyright;
+    }
+
+    .global-footer__links {
+        grid-area: links;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .global-nav {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: 2em;
+        grid-template-areas: "logo links";
+        gap: 0.5em;
+        padding: 1em 5%;
+    }
+
+    .global-nav__logo {
+        height: 90px;
+        width: 250px;
+    }
+
+    .global-nav__links {
+        display: block;
+    }
+
+    .global-nav__hamburger-button {
+        display: none;
+    }
+
+    .hero {
+        height: 18em;
+    }
+
+    .hero__slogan-container {
+        height: 5em;
+        padding: 0.25em 5%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .about-bethany {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 0;
+        position: static;
+
+    }
+
+    .about-bethany__container {
+        padding: 1em 2em;
+        position: relative;
+        width: 350px;
+        background: white;
+    }
+
+    .about-bethany__image {
+        height: 100px;
+    }
+
+    .visit-us {
+        width: 100%;
+    }
+
+    .visit-us .layout {
+        display: grid;
+        grid: auto auto auto auto / 2fr 1.2fr;
+        grid-template-areas: "heading    heading"
+                             "image    address"
+                             "image      hours"
+                             "cta-button cta-button";
+        gap: 0.5em 4em;
+    }
+
+    .visit-us__image {
+        display: block;
+        grid-area: image;
+    }
+
+    .global-footer {
+        width: 100%;
+    }
+
+    .global-footer .layout {
+        display: grid;
+        grid: 1fr 1fr / auto;
+        gap: 0.5em;
+        grid-template-areas: "links"
+                             "copyright";
+        padding: 0.75em 0.5em;
+        justify-self: center;
+    }
+
+}
+
+
+/* Components */
+
+/* Components - Global Nav */
+
+header {
+    background: aquamarine;
+}
+
+.global-nav__logo {
+    background: azure;
+}
+
+.global-nav__links {
+    list-style: none;
+}
+
+.global-nav__links li {
+    display: inline;
+}
+
+/* Components - Hero */
+
+.about-bethany {
+    background: white;
+}
+
+.content {
+    background: beige;
+}
+
+.global-footer {
+    background: aquamarine;
+}
+
+/* Components - CTA Button */
+
+.cta-button {
+    justify-self: center;
+    width: 20em;
+}
