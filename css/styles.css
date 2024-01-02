@@ -21,23 +21,40 @@ h1, h2, h3 {
 
 /* Layout */
 
-.layout {
-    max-width: 1080px;
-    margin: auto;
+.fixed-width-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
 }
+
+.fixed-width {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+
+
+
+/* ------ */
 
 @media screen and (min-width: 0px) {
 
-    main {
-        margin-top: 4em;
+    .main > section:first-child {
+        padding-top: 2em;
     }
 
     .global-nav {
         display: grid;
-        grid: 2em / 2em 1fr 2em;
-        gap: 0.5em;
+        grid-template-columns: 2em auto 2em;
+        grid-template-rows: 2em;
         grid-template-areas: "hamburger logo .";
-        padding: 0.75em 0.5em;
+        width: 100%;
     }
 
     .global-nav__logo {
@@ -56,6 +73,40 @@ h1, h2, h3 {
     .global-nav__hamburger-button {
         grid-area: hamburger;
     }
+
+    .page-heading__heading,
+    .about-story__heading,
+    .about-story__image,
+    .about-story__text,
+    .about-shop__heading,
+    .about-shop__image,
+    .about-shop__text,
+    .global-footer__copyright,
+    .global-footer__links
+    {
+        grid-column: 1 / -1;
+    }
+
+    .global-footer > .section-grid {
+        display: grid;
+        grid: auto auto / auto;
+        gap: 0.5em;
+        grid-template-areas: "copyright"
+                             "links";
+        padding: 0.75em 0.5em;
+        justify-self: center;
+    }
+
+    .global-footer__copyright {
+        grid-area: copyright;
+    }
+
+    .global-footer__links {
+        grid-area: links;
+    }
+
+
+    /* ------ */
 
     .hero {
         height: 180px;
@@ -128,40 +179,20 @@ h1, h2, h3 {
         grid-area: cta-button;
     }
 
-    .global-footer {
-        padding: 1em 2em;
-    }
-
-    .global-footer .layout {
-        display: grid;
-        grid: auto auto / auto;
-        gap: 0.5em;
-        grid-template-areas: "copyright"
-                             "links";
-        padding: 0.75em 0.5em;
-        justify-self: center;
-    }
-
-    .global-footer__copyright {
-        grid-area: copyright;
-    }
-
-    .global-footer__links {
-        grid-area: links;
-    }
-
 }
 
 
 @media screen and (min-width: 600px) {
+
+    .main > section:first-child {
+        padding-top: 3em;
+    }
 
     .global-nav {
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-template-rows: 2em;
         grid-template-areas: "logo links";
-        gap: 0.5em;
-        padding: 1em 5%;
     }
 
     .global-nav__logo {
@@ -170,12 +201,29 @@ h1, h2, h3 {
     }
 
     .global-nav__links {
-        display: block;
+        grid-area: links;
+        display: none;
     }
 
     .global-nav__hamburger-button {
         display: none;
     }
+
+    .global-nav__links {
+        display: block;
+    }
+
+    .global-footer > .section-grid {
+        display: grid;
+        grid: 1fr 1fr / auto;
+        gap: 0.5em;
+        grid-template-areas: "links"
+                             "copyright";
+        padding: 0.75em 0.5em;
+        justify-self: center;
+    }
+
+    /* ------ */
 
     .hero {
         height: 18em;
@@ -227,19 +275,7 @@ h1, h2, h3 {
         grid-area: image;
     }
 
-    .global-footer {
-        width: 100%;
-    }
 
-    .global-footer .layout {
-        display: grid;
-        grid: 1fr 1fr / auto;
-        gap: 0.5em;
-        grid-template-areas: "links"
-                             "copyright";
-        padding: 0.75em 0.5em;
-        justify-self: center;
-    }
 
 }
 
@@ -262,6 +298,16 @@ header {
 
 .global-nav__links li {
     display: inline;
+}
+
+/* Components - Page Heading */
+
+.page-heading {
+    background-color: #ebebeb;
+}
+
+.about-shop {
+    background-color: #ebebeb;
 }
 
 /* Components - Hero */
