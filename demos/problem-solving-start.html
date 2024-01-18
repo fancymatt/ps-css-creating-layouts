@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem Solving</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 2em;
+            background: #eee;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .price {
+            background: #457779;
+            color: white;
+        }
+
+        .price__dollars {
+            font-weight: bold;
+        }
+
+        .price__description {
+            font-size: 0.6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .pies {
+            background: #eee;
+        }
+
+        .pie {
+            background: #fff;
+            padding: 0.5em 0.75em;
+        }
+
+        .pie__image {
+            max-width: 100%;
+        }
+
+        .pie__name {
+            margin: 0;
+        }
+
+        .pie__description {
+            font-size: 0.75em;
+        }
+        
+        .price {
+            padding: 0.25em 0.5em;
+        }
+
+        /* Insert layout code here */
+
+        .pies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 10em);
+            justify-content: space-between;
+            gap: 1em;
+        }
+
+        .pie {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25em;
+        }
+
+        .pie__description {
+            flex-grow: 1;
+        }
+
+        .pie__prices {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Problem Solving - Cards</h2>
+    <main class="pies">
+        <div class="pie">
+            <h3 class="pie__name">Apple Crisp</h3>
+            <img class="pie__image" src="../img/apple-crisp-pie.png">
+            <p class="pie__description">We use only the most tender and juicy apples, tossed with brown sugar, lemon juice, and cinnamon.</p>
+            <div class="pie__prices">
+                <div class="price">
+                    <span class="price__dollars">$19.99</span>
+                    <span class="price__description">Whole Pie</span>
+                </div>
+                <div class="price">
+                    <span class="price__dollars">$3.99</span>
+                    <span class="price__description">Per Slice</span>
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h3 class="pie__name">Blackberry</h3>
+            <img class="pie__image" src="../img/blackberry-pie.png">
+            <p class="pie__description">Our pie features a buttery crust filled with a smooth and creamy pumpkin custard, flavored with cinnamon, nutmeg, ginger, and cloves.</p>
+            <div class="pie__prices">
+                <div class="price">
+                    <span class="price__dollars">$19.99</span>
+                    <span class="price__description">Whole Pie</span>
+                </div>
+                <div class="price">
+                    <span class="price__dollars">$3.99</span>
+                    <span class="price__description">Per Slice</span>
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h3 class="pie__name">Cherry</h3>
+            <img class="pie__image" src="../img/cherry-pie.png">
+            <p class="pie__description">Try our sumptuous cherry pie. A classic recipe!</p>
+            <div class="pie__prices">
+                <div class="price">
+                    <span class="price__dollars">$19.99</span>
+                    <span class="price__description">Whole Pie</span>
+                </div>
+                <div class="price">
+                    <span class="price__dollars">$3.99</span>
+                    <span class="price__description">Per Slice</span>
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h3 class="pie__name">French Silk</h3>
+            <img class="pie__image" src="../img/french-silk-pie.png">
+            <p class="pie__description">This heavely pie features a chocolate cookie crust filled with a luscious chocolate mousse, made with premium dark chocolate, butter, eggs, and cream.</p>
+            <div class="pie__prices">
+                <div class="price">
+                    <span class="price__dollars">$19.99</span>
+                    <span class="price__description">Whole Pie</span>
+                </div>
+                <div class="price">
+                    <span class="price__dollars">$3.99</span>
+                    <span class="price__description">Per Slice</span>
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h3 class="pie__name">Pumpkin</h3>
+            <img class="pie__image" src="../img/pumpkin-pie.png">
+            <p class="pie__description">Enjoy a perfectly buttery crust filled with a smooth and creamy pumpkin custard, flavored with cinnamon, nutmeg, ginger, and cloves.</p>
+            <div class="pie__prices">
+                <div class="price">
+                    <span class="price__dollars">$19.99</span>
+                    <span class="price__description">Whole Pie</span>
+                </div>
+                <div class="price">
+                    <span class="price__dollars">$3.99</span>
+                    <span class="price__description">Per Slice</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

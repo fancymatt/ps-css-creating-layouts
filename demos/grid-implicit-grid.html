@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Bethany's Pie Shop</title>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div, header, main, nav, aside, footer {
+            border: 10px solid #FF1675;
+            background-color: #130F25;
+            border-radius: 1em;
+            padding: 0.5em;
+        }
+
+        .layout * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: #FF1675;
+            color: #130F25;
+            text-align: center;
+            border-radius: 0.25em;
+        }
+
+        .layout {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-rows: 100px;
+            gap: 0.5em;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 50px 50px 50px;
+        }
+
+        .special {
+            grid-column: 7 / 8;
+            grid-row: 4 / 5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Implicit and Explicit Grid</h2>
+    <div class="layout">
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div><p>item</p></div>
+        <div class="special"><p>special item</p></div>
+    </div>
+</body>
+</html>

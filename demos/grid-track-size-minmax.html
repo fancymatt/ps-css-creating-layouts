@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout - Grid</title>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div, header, main, nav, aside, footer {
+            border: 10px solid #FF1675;
+            background-color: #130F25;
+            border-radius: 1em;
+            padding: 0.5em;
+        }
+
+        .layout * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: #FF1675;
+            color: #130F25;
+            text-align: center;
+            border-radius: 0.25em;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 
+                minmax(max-content, 1fr) 
+                1fr 
+                minmax(max-content, 1fr);
+            gap: 0.5em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Minmax example</h2>
+    <div class="layout">
+        <div><p>minmax column</p></div>
+        <div><p>1fr</p></div>
+        <div><p>minmax column</p></div>
+    </div>
+</body>
+</html>

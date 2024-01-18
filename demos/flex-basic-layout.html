@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout - Flexbox</title>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div, header, main, nav, aside, footer {
+            border: 10px solid #FF1675;
+            background-color: #130F25;
+            border-radius: 1em;
+            padding: 0.5em;
+        }
+
+        .layout * {
+            padding: 0;
+            margin: 0;
+            border: 1px solid white;
+            background-color: #FF1675;
+            color: #130F25;
+            text-align: center;
+            border-radius: 0.25em;
+        }
+
+        .layout {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        .horizontal-layout {
+            display: flex;
+            gap: 0.5em;
+        }
+
+        .horizontal-layout > * {
+            flex: 1 1 33%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Holy Grail Layout - Flexbox</h2>
+    <div class="layout">
+        <header><p>Header</p></header>
+        <div class="horizontal-layout">
+            <nav><p>Sidenav</p></nav>
+            <main><p>Main</p></main>
+            <aside><p>Sidebar</p></aside>
+        </div>
+        <footer><p>Footer</p></footer>
+    </div>
+</body>
+</html>

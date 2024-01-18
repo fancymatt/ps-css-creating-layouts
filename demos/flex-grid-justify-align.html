@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Justify, Align</title>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div {
+            border: 10px solid #FF1675;
+            background-color: #130F25;
+            border-radius: 1em;
+            padding: 0.5em;
+            margin-bottom: 4em;
+        }
+
+        div > div {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: #FF1675;
+            color: #130F25;
+            text-align: center;
+            border-radius: 0.25em;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 0.5em;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            width: 400px;
+            height: 270px;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 0.5em;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 50px 75px;
+            justify-content: end;
+            justify-items: start;
+            align-items: center;
+        }
+
+        .special {
+            align-self: stretch;
+            justify-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flexbox</h2>
+    <div class="flex-container">
+        <div><p>Item 1</p></div>
+        <div><p>Item 2 Long Name</p></div>
+        <div class="special"><p>Item 3</p></div>
+        <div><p>Item 4</p></div>
+    </div>
+    <h2>Grid</h2>
+    <div class="grid-container">
+        <div><p>Item 1</p></div>
+        <div><p>Item 2 Long Name</p></div>
+        <div class="special"><p>Item 3</p></div>
+        <div><p>Item 4</p></div>
+    </div>
+</body>
+</html>

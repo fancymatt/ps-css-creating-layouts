@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout - Grid</title>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div, header, main, nav, aside, footer {
+            border: 10px solid #FF1675;
+            background-color: #130F25;
+            border-radius: 1em;
+            padding: 0.5em;
+        }
+
+        .layout * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: #FF1675;
+            color: #130F25;
+            text-align: center;
+            border-radius: 0.25em;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "header header header"
+                                 "nav    main   sidebar"
+                                 "footer footer footer";
+            gap: 0.5em;
+        }
+
+        header {
+            grid-area: header;
+        }
+        
+        nav {
+            grid-area: nav;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Holy Grail Layout - Grid</h2>
+    <div class="layout">
+        <header><p>Header</p></header>
+        <nav><p>Sidenav</p></nav>
+        <main><p>Main</p></main>
+        <aside><p>Sidebar</p></aside>
+        <footer><p>Footer</p></footer>
+    </div>
+</body>
+</html>

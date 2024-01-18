@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout - Grid</title>
+    <style>
+        body {
+            margin: 2em;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        div, header, main, nav, aside, footer {
+            border: 10px solid #FF1675;
+            background-color: #130F25;
+            border-radius: 1em;
+            padding: 0.5em;
+        }
+
+        .layout-1 *,
+        .layout-2 * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: #FF1675;
+            color: #130F25;
+            text-align: center;
+            border-radius: 0.25em;
+        }
+
+        .layout-1 {
+            display: grid;
+            grid-template-columns: 100px auto;
+            gap: 0.5em;
+        }
+
+        .layout-2 {
+            display: grid;
+            grid-template-columns: 100px auto 1fr;
+            gap: 0.5em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Auto takes up extra space</h2>
+    <div class="layout-1">
+        <div><p>100px</p></div>
+        <div><p>auto</p></div>
+    </div>
+
+    <h2>Auto concedes to fr tracks</h2>
+    <div class="layout-2">
+        <div><p>100px</p></div>
+        <div><p>auto</p></div>
+        <div><p>1fr</p></div>
+    </div>
+</body>
+</html>
