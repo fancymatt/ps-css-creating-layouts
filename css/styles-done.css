@@ -1,0 +1,433 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+.border {
+    border: 1px black solid;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* Layout */
+
+.fixed-width-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.fixed-width {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+
+
+/* ------ */
+
+@media screen and (min-width: 0px) {
+
+    .global-nav {
+        display: grid;
+        grid-template-columns: 2em auto 2em;
+        grid-template-rows: 2em;
+        grid-template-areas: "hamburger logo .";
+        width: 100%;
+    }
+
+    .global-nav__logo {
+        grid-area: logo;
+        position: relative;
+        height: 65px;
+        width: 180px;
+        justify-self: center;
+    }
+
+    .global-nav__links {
+        grid-area: links;
+        display: none;
+    }
+
+    .global-nav__hamburger-button {
+        grid-area: hamburger;
+    }
+
+    .main > section:first-child {
+        padding-top: 2em;
+    }
+
+    .section-grid > *
+    {
+        grid-column: 1 / -1;
+    }
+
+    .global-footer__grid {
+        display: grid;
+        grid: auto auto / auto;
+        gap: 0.5em;
+        grid-template-areas: "copyright"
+                             "links";
+        padding: 0.75em 0.5em;
+        justify-self: center;
+    }
+
+    .global-footer__copyright {
+        grid-area: copyright;
+    }
+
+    .global-footer__links {
+        grid-area: links;
+    }
+
+    /* Layout - Index Page */
+
+    .hero-about {
+        display: grid;
+        grid-template-rows: 5em 12em auto;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .hero-about-background {
+        grid-row: 1 / 3;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-rows: 5em 12em;
+    }
+
+    .hero-about-background__slogan-container {
+        display: flex;
+        padding: 1em;
+        justify-content: center;
+        align-items: end;
+
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .hero-about-background__hero-image {
+        grid-row: 1 / 3;
+        grid-column: 1 / -1;
+        background-color: white;
+        z-index: -1;
+    }
+
+    .hero-about-foreground {
+        grid-row: 1 / 4;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-rows: 5em 12em min-content;
+    }
+
+    .about-bethany {
+        grid-row: 3 / 4;
+    }
+
+    /* Layout - Visit Us Page */
+
+    .about-us__image-1 {
+        grid-column: 1 / 7;
+    }
+
+    .about-us__image-2 {
+        grid-column: 7 / 13;
+    }
+
+    /* ------ */
+
+    .hero {
+        height: 180px;
+    }
+
+    .hero__slogan-container {
+        height: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 0.25em;
+    }
+
+    .about-bethany {
+        padding: 1em 2em;
+    }
+
+    .about-bethany__container {
+        display: grid;
+        gap: 0.5em;
+    }
+
+    .about-bethany__image {
+        height: 200px;
+    }
+
+    .pies {
+        padding: 1em 2em;
+    }
+
+    .pies .layout {
+        display: grid;
+        gap: 0.5em;
+    }
+
+    .pies__pie-images {
+        height: 200px;
+    }
+
+    .visit-us {
+        padding: 1em 2em;
+    }
+
+    .visit-us .layout {
+        display: grid;
+        grid: auto auto auto / 1fr 1fr;
+        grid-template-areas: "heading heading"
+                             "address hours"
+                             "cta-button cta-button";
+        gap: 0.5em;
+    }
+
+    .visit-us__heading {
+        grid-area: heading;
+    }
+
+    .visit-us__image {
+        display: none;
+    }
+
+    .address {
+        grid-area: address;
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+
+    .visit-us__cta-button {
+        grid-area: cta-button;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .main > section:first-child {
+        padding-top: 3em;
+    }
+
+    .global-nav {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: 2em;
+        grid-template-areas: "logo links";
+    }
+
+    .global-nav__logo {
+        height: 90px;
+        width: 250px;
+    }
+
+    .global-nav__links {
+        display: block;
+    }
+
+    .global-nav__hamburger-button {
+        display: none;
+    }
+
+    .global-nav__links {
+        display: block;
+    }
+
+    .global-footer__grid {
+        display: grid;
+        grid: 1fr 1fr / auto;
+        gap: 0.5em;
+        grid-template-areas: "links"
+                             "copyright";
+        padding: 0.75em 0.5em;
+        justify-self: center;
+    }
+
+    /* Layout - Index Page */
+
+    /* Layout - Visit Us Page */
+
+    .about-us__image-1 {
+        grid-column: 9 / 13;
+        grid-row: 2 / 3;
+    }
+
+    .about-us__image-2 {
+        grid-column: 1 / 5;
+    }
+
+    .about-us__image-3 {
+        grid-column: 1 / 9;
+        grid-row: 2 / 3;
+    }
+
+    .about-us__image-4 {
+        grid-column: 5 / 13;
+    }
+
+    .about-us__address {
+        grid-column: 2 / 6;
+    }
+
+    .about-us__hours {
+        grid-column: 8 / 12;
+    }
+
+
+    /* Layout - About Us Page */
+
+    .about-story__image {
+        grid-column: 6 / 13;
+    }
+
+    .about-story__text {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3; /* needed because text is later in markup */
+    }
+
+    .about-shop__image {
+        grid-column: 1 / 7;
+    }
+
+    .about-shop__text {
+        grid-column: 8 / 13;
+    }
+
+    /* Layout - Pies Page */
+
+    .pies-list__pie {
+        grid-column: span 4;
+    }
+
+
+
+    /* ------ */
+
+    .hero {
+        height: 18em;
+    }
+
+    .hero__slogan-container {
+        height: 5em;
+        padding: 0.25em 5%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .about-bethany {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: 0;
+        position: static;
+
+    }
+
+    .about-bethany__container {
+        padding: 1em 2em;
+        position: relative;
+        width: 350px;
+        background: white;
+    }
+
+    .about-bethany__image {
+        height: 100px;
+    }
+
+    .visit-us {
+        width: 100%;
+    }
+
+    .visit-us .layout {
+        display: grid;
+        grid: auto auto auto auto / 2fr 1.2fr;
+        grid-template-areas: "heading    heading"
+                             "image    address"
+                             "image      hours"
+                             "cta-button cta-button";
+        gap: 0.5em 4em;
+    }
+
+    .visit-us__image {
+        display: block;
+        grid-area: image;
+    }
+
+}
+
+
+/* Components */
+
+/* Components - Global Nav */
+
+header {
+    background: #003531;
+}
+
+.global-nav__logo {
+    background: green;
+    color: white;
+}
+
+.global-nav__links {
+    list-style: none;
+    color: white;
+}
+
+.global-nav__links li {
+    display: inline;
+}
+
+/* Components - Page Heading */
+
+.page-heading {
+    background-color: #ebebeb;
+}
+
+.about-shop {
+    background-color: #ebebeb;
+}
+
+/* Components - Hero */
+
+.about-bethany {
+    background: white;
+}
+
+.content {
+    background: beige;
+}
+
+.global-footer {
+    background: #000;
+}
+
+.global-footer__copyright,
+.global-footer__links {
+    color: #fff;
+}
+
+/* Components - CTA Button */
+
+.cta-button {
+    justify-self: center;
+    width: 20em;
+}
