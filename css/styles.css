@@ -16,9 +16,31 @@ body {
 
 /* Layout */
 
+
+.max-width-container {
+    display: flex;
+    justify-content: center;
+}
+
 .max-width {
     width: 100%;
     max-width: 1024px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 1em;
+}
+
+.section-grid > *
+{
+    grid-column: 1 / -1;
+}
+
+.section-name {
+    background-color: #ddd;
 }
 
 
