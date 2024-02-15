@@ -1,0 +1,13 @@
+.cta-button {
+    background-color: #457779;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "avory-i-latin", sans-serif;
+    font-weight: 800;
+    font-size: 0.8em;
+    padding: 0.75em 0;
+    border-radius: 0.75em;
+    filter: drop-shadow(0 6px black);
+    margin: 1.5em 0;
+}

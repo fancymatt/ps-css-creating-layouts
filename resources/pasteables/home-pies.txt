@@ -1,0 +1,26 @@
+<section class="home-pies max-width-container border">
+    <div class="section-grid max-width border">
+        <h2 class="home-pies__heading border">Pies</h2>
+        <div class="home-pies__image-1 border">
+            <img src="img/apple-pie.png" alt="an apple pie">
+        </div>
+        <div class="home-pies__image-2 border">
+            <img src="img/french-silk-pie.png" alt="a french silk pie">
+        </div>
+        <div class="home-pies__image-3 border">
+            <img src="img/key-lime-pie.png" alt="a key lime pie">
+        </div>
+        <div class="home-pies__image-4 border">
+            <img src="img/coconut-cream-pie.png" alt="a coconut cream pie">
+        </div>
+        <div class="home-pies__image-5 border">
+            <img src="img/blackberry-pie.png" alt="a blackberry pie">
+        </div>
+        <div class="home-pies__image-6 border">
+            <img src="img/pumpkin-pie.png" alt="a pumpkin pie">
+        </div>
+        <p class="home-pies__text-1 border">Fresh ingredients. A loving attention to detail. And handmade crust that is just as flaky as you want it to be. Bethany's pies need to be tasted to be believed.</p>
+        <p class="home-pies__text-2 border">With over a dozen standard varietals and a rotating assortment of seasonal delights, there's always a new reason to stop in.</p>
+        <a href="pies.html" class="home-pies__cta-button cta-button">Browse Our Pies</a>
+    </div>
+</section>

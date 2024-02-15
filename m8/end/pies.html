@@ -1,57 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pies - Bethany's Pie Shop</title>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/zyv7ruz.css">
-</head>
+    <head>
+        <title>Pies - Bethany's Pie Shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/zyv7ruz.css">
+    </head>
 
-<body>
-    <header class="max-width-container global-header">
-        <nav class="global-nav max-width">
-            <div class="global-nav__hamburger-button">=</div>
-            <a href="home.html" class="global-nav__logo">
-                <img src="img/bethany-logo.png">
-            </a>
-            <div class="global-nav__links">
-                <ul>
-                    <li><a href="pies.html">Pies</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="visit-us.html">Visit Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <body>
+        <header class="global-header max-width-container">
+            <nav class="global-nav max-width">
+                <div class="global-nav__hamburger-button">
+                    <img src="img/hamburger-icon.png">
+                </div>
+                <a href="home.html" class="global-nav__logo">
+                    <img src="img/bethany-logo.png" alt="back to homepage">
+                </a>
+                <div class="global-nav__links">
+                    <ul>
+                        <li><a href="pies.html">Pies</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="visit-us.html">Visit Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     <main class="main">
-        <section class="page-heading max-width-container border">
-            <div class="section-grid max-width border">
-                <h1 class="page-heading__heading border">page-heading__heading</h1>
+        <section class="page-heading max-width-container">
+            <div class="section-grid max-width">
+                <h1 class="page-heading__heading">Pie Menu</h1>
             </div>
         </section>
-        <section class="pies-filter max-width-container border">
-            <div class="section-grid max-width border">
-                <div class="pies-filter__filter border">pies-filter__filter</div>
+        <section class="pies-filter max-width-container">
+            <div class="section-grid max-width">
+                <div class="pies-filter__filter">
+                    <button class="filter filter--selected">All Pies</button>
+                    <button class="filter">Vegan Only</button>
+                    <button class="filter">Limited</button>
+                    <button class="filter">Gluten Free</button>
+                </div>
             </div>
         </section>
-        <section class="pies-list max-width-container border">
-            <div class="section-grid max-width border">
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
-                <div class="pie border">pie</div>
+        <section class="pies-list max-width-container">
+            <div class="section-grid max-width">
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Apple Crisp</h3>
+                        <img src="img/apple-crisp-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Blackberry</h3>
+                        <img src="img/blackberry-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Blueberry</h3>
+                        <img src="img/blueberry-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Coconut Cream</h3>
+                        <img src="img/coconut-cream-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>French Silk</h3>
+                        <img src="img/french-silk-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Pumpkin</h3>
+                        <img src="img/pumpkin-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Lemon Meringue</h3>
+                        <img src="img/lemon-meringue-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Mixed Berry</h3>
+                        <img src="img/mixed-berry-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie">
+                    <div class="pie-grid">
+                        <h3>Rhubarb</h3>
+                        <img src="img/rhubarb-pie.png">
+                        <p>Pie description goes here. Pie description goes here. Pie description goes here.</p>
+                        <div class="pie__prices">
+                            <div class="pie__price">
+                                <span class="price">$19.99</span>
+                                <span class="product">Whole Pie</span>
+                            </div>
+                            <div class="pie__price">
+                                <span class="price">$3.99</span>
+                                <span class="product">Per Slice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="max-width-container global-footer border">
-        <div class="max-width global-footer__grid border">
-            <p class="global-footer__copyright border">Copyright 2024, Bethany’s Pie Shop</p>
-            <ul class="global-footer__links border">
+    <footer class="max-width-container global-footer">
+        <div class="max-width global-footer__grid">
+            <p class="global-footer__copyright">Copyright 2024, Bethany’s Pie Shop</p>
+            <ul class="global-footer__links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="pies.html">Pies</a></li>
                 <li><a href="about.html">About</a></li>
@@ -59,5 +212,13 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const hamburgerButton = document.getElementsByClassName("global-nav__hamburger-button").item(0);
+
+        hamburgerButton.addEventListener("click", () => {
+            const linksOverlay = document.getElementsByClassName("global-nav__links").item(0);
+            linksOverlay.classList.toggle("active");
+        });
+    </script>
     </body>
 </html>
