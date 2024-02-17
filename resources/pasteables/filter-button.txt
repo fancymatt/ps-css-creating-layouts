@@ -1,0 +1,15 @@
+.filter__option {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 1em;
+    font-family: bebas-neue, sans-serif;
+    padding: 0.25em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.filter__option--selected {
+    background-color: black;
+    color: white;
+}
