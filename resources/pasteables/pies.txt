@@ -7,7 +7,7 @@
             <img src="img/apple-crisp-pie.png" alt="an apple crisp pie">
         </div>
         <div class="pie-grid__description">
-            <p>Bursting with juicy blackberries, this pie is pure berry bliss.</p>
+            <p>Crispy, cinnamon-kissed apples in a flaky crust.</p>
         </div>
         <div class="pie-grid__prices">
             <div class="pie__price">
