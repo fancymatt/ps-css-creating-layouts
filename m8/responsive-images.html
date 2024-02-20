@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About - Bethany's Pie Shop</title>
+    <title>Responsive Images</title>
     <style>
         body {
             margin: 2em;
@@ -39,11 +39,15 @@
         }
 
         .unbounded img {
-
+            max-width: 100%;
+            display: block;
         }
 
         .static img {
-            
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 32%;
         }
 
 
@@ -53,11 +57,11 @@
 <body>
     <h2>Image with unbounded height</h2>
     <div class="layout unbounded">
+        <img src="../resources/img/apple-pie.png">
     </div>
     <h2>Image with static height</h2>
     <div class="layout static">
+        <img src="../resources/img/apple-pie.png">
     </div>
-
-    <img src="../resources/img/apple-pie.png">
 </body>
 </html>
